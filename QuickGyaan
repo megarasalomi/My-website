@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+  :root { --neon: #00ffcc; --dark: #0a0a0a; }
+  body { background: var(--dark); color: white; font-family: sans-serif; margin: 0; text-align: center; }
+  
+  /* Hero Section */
+  header { padding: 100px 20px; background: radial-gradient(circle, #1a1a1a, #000); }
+  h1 { font-size: 4rem; margin: 0; letter-spacing: -2px; }
+  h1 span { color: var(--neon); text-shadow: 0 0 20px var(--neon); }
+  p { color: #888; font-size: 1.2rem; }
+
+  /* Creative Button */
+  .btn { 
+    display: inline-block; padding: 15px 40px; border: 2px solid var(--neon); 
+    color: var(--neon); text-decoration: none; font-weight: bold; 
+    border-radius: 50px; transition: 0.3s; margin-top: 20px;
+  }
+  .btn:hover { background: var(--neon); color: black; box-shadow: 0 0 30px var(--neon); }
+
+  /* Grid Layout */
+  .container { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 20px; padding: 50px; }
+  .card { background: #111; padding: 30px; border-radius: 20px; border: 1px solid #222; transition: 0.4s; }
+  .card:hover { border-color: var(--neon); transform: translateY(-10px); }
+  h3 { color: var(--neon); margin-top: 0; }
+</style>
+</head>
+<body>
+
+<header>
+  <h1>Quick<span>Gyaan</span></h1>
+  <p>2-minute knowledge. Zero fluff. Master your money and life.</p>
+  <a href="#" class="btn">START READING</a>
+</header>
+
+<div class="container">
+  <div class="card">
+    <h3>📈 Finance</h3>
+    <p>Why 2026 feels so expensive. The simple truth about inflation.</p>
+  </div>
+  <div class="card">
+    <h3>🧠 Mindset</h3>
+    <p>The "Broke Trap" and how to escape it with 3 daily habits.</p>
+  </div>
+  <div class="card">
+    <h3>🔥 Trends</h3>
+    <p>What's actually happening in the world, explained in plain English.</p>
+  </div>
+</div>
+
+<footer style="color:#444; padding: 40px;">© 2026 QuickGyaan</footer>
+
+</body>
+</html>
